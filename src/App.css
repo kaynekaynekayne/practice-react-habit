@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+  border:none;
+  font-size:18px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container{
+  display:flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:0px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+  display:flex;
+  padding:15px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  margin-right:5px;
+}
+
+.habits{
+  margin-top:20px;
+}
+.habit__name{
+  margin-right:5px;
+}
+
+.habit__count,.habits__count{
+  color:white;
+  background-color: rgb(96, 131, 96);
+  border-radius: 50%;
+  padding:2px 9px;
+  margin-right:20px;
+}
+
+.btn{
+  background:none;
+  cursor: pointer;
+  margin:4px;
+  transition: transform 300ms;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.habit__plus{
+  color:steelblue;
+}
+
+.habit__minus{
+  color:steelblue;
+}
+
+.habit__delete{
+  color:indianred;
 }
